@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#713939"
+        android:layout_marginBottom="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="16dp"
+            app:cardUseCompatPadding="true"
+            android:background="#D68787"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/dell"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dell -VPro Vostro 23569 Edition"
+                    android:layout_toRightOf="@id/productImage"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/dellPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount: 250$"
+                    android:textColor="#21CC28"
+                    android:layout_toRightOf="@id/productImage"
+                    android:layout_below="@id/dell"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dellWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net weight: +-1000g"
+                    android:layout_below="@id/dellPrice"
+                    android:layout_toRightOf="@id/productImage"
+                    android:textStyle="italic"
+                    android:textSize="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMinus3"
+                            android:layout_width="55dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#FF0F43FF"
+                            android:text="-"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/btnPlus3"
+                            android:layout_width="55dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:backgroundTint="#FFEC145D"
+                            android:paddingRight="20dp"
+                            android:text="+"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/quantityCounter3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="0 pcs"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:cardCornerRadius="16dp"
+            app:cardUseCompatPadding="true"
+            android:background="#D68787"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/productImage2"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/img" />
+
+                <TextView
+                    android:id="@+id/dell2"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/productImage2"
+                    android:text="Dell -VPro Vostro 23569 Edition"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dellPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dell2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/productImage2"
+                    android:text="Amount: 250$"
+                    android:textColor="#21CC28"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dellWeight2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dellPrice2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/productImage2"
+                    android:text="Net weight: +-1000g"
+                    android:textSize="18dp"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/buttonDecrease2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dellWeight2"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#012AF6"
+                    android:layout_toRightOf="@id/productImage2"
+                    android:text="-" />
+
+                <Button
+                    android:id="@+id/buttonIncrease2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dellWeight2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/buttonDecrease2"
+                    android:text="+" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:cardCornerRadius="16dp"
+            app:cardUseCompatPadding="true"
+            android:background="#D68787"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/productImage1"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/dell1"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dell -VPro Vostro 23569 Edition"
+                    android:layout_toRightOf="@id/productImage1"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/dellPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount: 250$"
+                    android:textColor="#21CC28"
+                    android:layout_toRightOf="@id/productImage1"
+                    android:layout_below="@id/dell1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dellWeight1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net weight: +-1000g"
+                    android:layout_below="@id/dellPrice1"
+                    android:layout_toRightOf="@id/productImage1"
+                    android:textStyle="italic"
+                    android:textSize="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:id="@+id/buttonDecrease1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dellWeight1"
+                    android:layout_toRightOf="@id/productImage1"
+                    android:layout_marginTop="10dp"
+                    android:text="-" />
+
+                <Button
+                    android:id="@+id/buttonIncrease1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dellWeight1"
+                    android:layout_toRightOf="@id/buttonDecrease1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="+" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:cardCornerRadius="16dp"
+            app:cardUseCompatPadding="true"
+            android:background="#D68787"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/productImage3"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/dell3"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dell -VPro Vostro 23569 Edition"
+                    android:layout_toRightOf="@id/productImage3"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/dellPrice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount: 250$"
+                    android:textColor="#21CC28"
+                    android:layout_toRightOf="@id/productImage3"
+                    android:layout_below="@id/dell3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dellWeight3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net weight: +-1000g"
+                    android:layout_below="@id/dellPrice3"
+                    android:layout_toRightOf="@id/productImage3"
+                    android:textStyle="italic"
+                    android:textSize="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:id="@+id/buttonDecrease3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dellWeight3"
+                    android:layout_toRightOf="@id/productImage3"
+                    android:layout_marginTop="10dp"
+                    android:text="-" />
+
+                <Button
+                    android:id="@+id/buttonIncrease3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dellWeight3"
+                    android:layout_toRightOf="@id/buttonDecrease3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="+" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>
